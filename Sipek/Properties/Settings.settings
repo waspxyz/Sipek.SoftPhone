@@ -1,0 +1,221 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Sipek.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="cfgSipPort" Type="System.String" Scope="User">
+      <Value Profile="(Default)">5060</Value>
+    </Setting>
+    <Setting Name="cfgRingMode" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="cfgSipAccountPorts" Type="System.String" Scope="User">
+      <Value Profile="(Default)">
+          &lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+            &lt;string&gt;5060&lt;/string&gt;
+            &lt;string&gt;5060&lt;/string&gt;
+            &lt;string&gt;5060&lt;/string&gt;
+            &lt;string&gt;5060&lt;/string&gt;
+            &lt;string&gt;5060&lt;/string&gt;
+          &lt;/ArrayOfString&gt;
+        </Value>
+    </Setting>
+    <Setting Name="cfgSipAccountRegPeriod" Type="System.String" Scope="User">
+      <Value Profile="(Default)">
+          &lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+            &lt;string&gt;3600&lt;/string&gt;
+            &lt;string&gt;3600&lt;/string&gt;
+            &lt;string&gt;3600&lt;/string&gt;
+            &lt;string&gt;3600&lt;/string&gt;
+            &lt;string&gt;3600&lt;/string&gt;
+          &lt;/ArrayOfString&gt;
+        </Value>
+    </Setting>
+    <Setting Name="cfgSipAccountDefault" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="cfgSipAccountDomains" Type="System.String" Scope="User">
+      <Value Profile="(Default)">
+          &lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+            &lt;string&gt;*&lt;/string&gt;
+            &lt;string&gt;*&lt;/string&gt;
+            &lt;string&gt;*&lt;/string&gt;
+            &lt;string&gt;*&lt;/string&gt;
+            &lt;string&gt;*&lt;/string&gt;
+          &lt;/ArrayOfString&gt;
+        </Value>
+    </Setting>
+    <Setting Name="cfgCFUFlag" Type="System.String" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="cfgCFUNumber" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="cfgCFNRNumber" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="cfgCFNRFlag" Type="System.String" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="cfgDNDFlag" Type="System.String" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="cfgCFBFlag" Type="System.String" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="cfgCFBNumber" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="cfgAAFlag" Type="System.String" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="cfgAATimeout" Type="System.String" Scope="User">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="cfgSipAccountDisplayName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">
+          &lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+            &lt;string /&gt;
+            &lt;string /&gt;
+            &lt;string /&gt;
+            &lt;string /&gt;
+            &lt;string /&gt;
+            &lt;string /&gt;
+          &lt;/ArrayOfString&gt;
+        </Value>
+    </Setting>
+    <Setting Name="cfgSipAccountAddresses" Type="System.String" Scope="User">
+      <Value Profile="(Default)">
+          &lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+            &lt;string /&gt;
+            &lt;string /&gt;
+            &lt;string /&gt;
+            &lt;string /&gt;
+            &lt;string /&gt;
+          &lt;/ArrayOfString&gt;
+        </Value>
+    </Setting>
+    <Setting Name="cfgSipAccountPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)">
+          &lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+            &lt;string /&gt;
+            &lt;string /&gt;
+            &lt;string /&gt;
+            &lt;string /&gt;
+            &lt;string /&gt;
+          &lt;/ArrayOfString&gt;
+        </Value>
+    </Setting>
+    <Setting Name="cfgSipAccountIds" Type="System.String" Scope="User">
+      <Value Profile="(Default)">
+          &lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+            &lt;string /&gt;
+            &lt;string /&gt;
+            &lt;string /&gt;
+            &lt;string /&gt;
+            &lt;string /&gt;
+          &lt;/ArrayOfString&gt;
+        </Value>
+    </Setting>
+    <Setting Name="cfgSipAccountUsername" Type="System.String" Scope="User">
+      <Value Profile="(Default)">
+          &lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+            &lt;string /&gt;
+            &lt;string /&gt;
+            &lt;string /&gt;
+            &lt;string /&gt;
+            &lt;string /&gt;
+          &lt;/ArrayOfString&gt;
+        </Value>
+    </Setting>
+    <Setting Name="cfgSipAccountState" Type="System.String" Scope="User">
+      <Value Profile="(Default)">
+          &lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+            &lt;string /&gt;
+            &lt;string /&gt;
+            &lt;string /&gt;
+            &lt;string /&gt;
+            &lt;string /&gt;
+          &lt;/ArrayOfString&gt;
+        </Value>
+    </Setting>
+    <Setting Name="cfgSipAccountNames" Type="System.String" Scope="User">
+      <Value Profile="(Default)">
+          &lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+            &lt;string /&gt;
+            &lt;string /&gt;
+            &lt;string /&gt;
+            &lt;string /&gt;
+            &lt;string /&gt;
+            &lt;string /&gt;
+            &lt;string /&gt;
+          &lt;/ArrayOfString&gt;
+        </Value>
+    </Setting>
+    <Setting Name="cfgCodecList" Type="System.String" Scope="User">
+      <Value Profile="(Default)">
+          &lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+            &lt;string&gt;PCMU/8000/1&lt;/string&gt;
+            &lt;string&gt;PCMA/8000/1&lt;/string&gt;
+          &lt;/ArrayOfString&gt;
+        </Value>
+    </Setting>
+    <Setting Name="cfgSipAccountProxyAddresses" Type="System.String" Scope="User">
+      <Value Profile="(Default)">
+          &lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+            &lt;string /&gt;
+            &lt;string /&gt;
+            &lt;string /&gt;
+            &lt;string /&gt;
+            &lt;string /&gt;
+            &lt;string /&gt;
+          &lt;/ArrayOfString&gt;
+        </Value>
+    </Setting>
+    <Setting Name="cfgStunServerAddress" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="cfgDtmfMode" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="cfgSipAccountTransport" Type="System.String" Scope="User">
+      <Value Profile="(Default)">
+          &lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+            &lt;string&gt;0&lt;/string&gt;
+            &lt;string&gt;0&lt;/string&gt;
+            &lt;string&gt;0&lt;/string&gt;
+            &lt;string&gt;0&lt;/string&gt;
+            &lt;string&gt;0&lt;/string&gt;
+          &lt;/ArrayOfString&gt;
+        </Value>
+    </Setting>
+    <Setting Name="cfgSipPublishEnabled" Type="System.String" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="cfgSipAccountIndex" Type="System.String" Scope="User">
+      <Value Profile="(Default)">
+          &lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+            &lt;string /&gt;
+            &lt;string /&gt;
+            &lt;string /&gt;
+            &lt;string /&gt;
+            &lt;string /&gt;
+          &lt;/ArrayOfString&gt;
+        </Value>
+    </Setting>
+    <Setting Name="cfgRegistrationTimeout" Type="System.String" Scope="User">
+      <Value Profile="(Default)">3600</Value>
+    </Setting>
+    <Setting Name="cfgVAD" Type="System.String" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="cfgECTail" Type="System.String" Scope="User">
+      <Value Profile="(Default)">200</Value>
+    </Setting>
+    <Setting Name="cfgNameServer" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="cfgUpdgradeSettings" Type="System.String" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

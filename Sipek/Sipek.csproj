@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{30B5A1AD-DFC6-41F3-97F4-968282D6056C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sipek</RootNamespace>
+    <AssemblyName>Sipek</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="pjsipDll">
+      <HintPath>..\lib\pjsipDll.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Text">
+      <HintPath>..\lib\ServiceStack.Text.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BuddyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuddyForm.Designer.cs">
+      <DependentUpon>BuddyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CCallLog.cs" />
+    <Compile Include="ChatForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChatForm.Designer.cs">
+      <DependentUpon>ChatForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ErrorDialog.Designer.cs">
+      <DependentUpon>ErrorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KeyboardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KeyboardForm.Designer.cs">
+      <DependentUpon>KeyboardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="phonebook.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingsForm.Designer.cs">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SipekFactory.cs" />
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SettingsForm.resx">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SipekSdk\SipekSdk.csproj">
+      <Project>{9d15571b-af8a-40ab-b182-c5e8b7761b51}</Project>
+      <Name>SipekSdk</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WaveLibMixer\WaveLibMixer.csproj">
+      <Project>{6f3fa628-01c6-48af-9d1a-9bb1eaf8d259}</Project>
+      <Name>WaveLibMixer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Dial.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\DialOV.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\DialPad0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\DialPad0OV.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\DialPad1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\DialPad1OV.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\DialPad2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\DialPad2OV.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\DialPad3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\DialPad3OV.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\DialPad4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\DialPad4OV.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\DialPad5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\DialPad5OV.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\DialPad6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\DialPad6OV.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\DialPad7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\DialPad7OV.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\DialPad8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\DialPad8OV.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\DialPad9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\DialPad9OV.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\DialPadHash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\DialPadHashOV.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Hangup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\HangupOV.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\keyboard_key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\loudspeaker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\loudspeaker_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\loudspeaker_delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\loudspeaker_edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\loudspeaker_network.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\loudspeaker_pause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\loudspeaker_preferences.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\loudspeaker_run.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\loudspeaker_stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\microphone1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\microphone2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\phone_call.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\phone_conference.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\phone_hold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\phone_pick_up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\phone_recall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\phone_redirect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\phone_reject.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\phone_speaker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Image\DialPadStarOV.png" />
+    <Content Include="Image\ico_mutedin.png" />
+    <Content Include="Image\ico_mutedout.png" />
+    <Content Include="Image\ico_mutein.png" />
+    <Content Include="Image\ico_muteout.png" />
+    <Content Include="Image\phone_hang_up.png" />
+    <None Include="Resources\ico_mutein.png" />
+    <None Include="Resources\ico_mutedout.png" />
+    <None Include="Resources\ico_mutedin.png" />
+    <None Include="Resources\ico_muteout.png" />
+    <None Include="Image\DialPadStar.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
